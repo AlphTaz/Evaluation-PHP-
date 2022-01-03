@@ -114,7 +114,7 @@ public function show_stats () {
 
 // SEARCH FUNCTION 
 
-public function search ($x) {
+public function searchItems ($x) {
     if (($i = array_search($x, $this->items)) !== false){
     echo "Item exist in the array."; }
     
@@ -125,15 +125,15 @@ public function search ($x) {
 
 // ADD FUNCTION
 
-public function addTopping ($z) {
-    $z= strtolower($z);
-    array_push($this->items, $z);
+public function addItems ($y) {
+    $y= strtolower($y);
+    array_push($this->items, $y);
 }
 
 // REMOVE FUNCTION
 
-public function removeItem ($a) {
-    $value = $a;
+public function removeItems ($z) {
+    $value = $z;
     if (($i = array_search($value, $this->items)) !== false)
     unset($this->items[$i]);
 }
