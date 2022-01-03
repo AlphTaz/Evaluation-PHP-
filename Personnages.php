@@ -115,6 +115,7 @@ public function show_stats () {
 // SEARCH FUNCTION 
 
 public function searchItems ($x) {
+    $x= strtolower($x);
     if (($i = array_search($x, $this->items)) !== false){
     echo "Item exist in the array."; }
     
@@ -133,6 +134,7 @@ public function addItems ($y) {
 // REMOVE FUNCTION
 
 public function removeItems ($z) {
+    $z= strtolower($z);
     $value = $z;
     if (($i = array_search($value, $this->items)) !== false)
     unset($this->items[$i]);
