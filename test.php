@@ -1,7 +1,7 @@
 <?php
 
 require 'Personnages.php';
-$sasuke = new Personnage ("Sasuke", 1000,500, 700, 2000, []);
+$sasuke = new Personnage ("Sasuke Uchiwa", 1000,500, 700, 2000, []);
 
 // SHOW ITEMS TEST
 
