@@ -31,6 +31,8 @@ public function __construct (
 
 }
 
+// SECTION SET + GET 
+
 // Set + get for name 
 
 public function getName () {
@@ -96,5 +98,44 @@ public function setItems ($y) {
     $this->attack = $y;
 }
 
+// FIN SECTION SET + GET 
+
+// SHOW STATS FUNCTION
+
+public function show_stats () {
+    echo "Caractéristiques du personnage :\n";
+    echo $this->name."\n";
+    echo $this->healthPoint."\n";
+    echo $this->attack."\n";
+    echo $this->defense."\n";
+    echo $this->mana."\n";
+    echo $this->items."\n";
+}
+
+// SEARCH FUNCTION 
+
+public function search ($x) {
+    if (($i = array_search($x, $this->items)) !== false){
+    echo "Item exist in the array."; }
+    
+    else {
+        echo "Item not exist in the array.";
+    }
+}
+
+// ADD FUNCTION
+
+public function addTopping ($z) {
+    $z= strtolower($z);
+    array_push($this->items, $z);
+}
+
+// REMOVE FUNCTION
+
+public function removeItem ($a) {
+    $value = $a;
+    if (($i = array_search($value, $this->items)) !== false)
+    unset($this->items[$i]);
+}
 }
 ?>
