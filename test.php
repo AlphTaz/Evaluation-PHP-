@@ -22,7 +22,6 @@ $sasuke -> removeItems ("shuriken") ;
 
 $sasuke -> searchItems ("Katana") ;
 
-
-var_dump($sasuke);
+var_dump($sasuke->items);
 
 ?>

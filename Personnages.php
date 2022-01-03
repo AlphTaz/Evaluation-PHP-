@@ -104,12 +104,12 @@ public function setItems ($y) {
 
 public function show_stats () {
     echo "Caractéristiques du personnage :\n";
-    echo $this->name."\n";
-    echo $this->healthPoint."\n";
-    echo $this->attack."\n";
-    echo $this->defense."\n";
-    echo $this->mana."\n";
-    echo $this->items."\n";
+    echo "Name :" . " " . $this->name."\n";
+    echo "Health-Point :" . " " . $this->healthPoint. " Points" . "\n";
+    echo "Attack :" . " " . $this->attack. " Points" . "\n";
+    echo "Defense :" . " " . $this->defense . " Points"."\n";
+    echo "Mana :" . " " . $this->mana." Points"."\n";
+    echo "Items :" . " " . $this->items." Points"."\n";
 }
 
 // SEARCH FUNCTION 
